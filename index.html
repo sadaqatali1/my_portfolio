@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sadaqat Ali - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Sadaqat Ali
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          sadaqatali3716@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skill</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recomendations">Recommendation</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://i.imgur.com/rpaeJIt.jpg" class="profile_image" height="60" width="60"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Sadaqat Ali! &#x1F44B;
+          </h1>
+          <p>
+            I am a fresh graduate from the University of Azad Jammu & Kashmir with a degree in Computer Science.
+      As a full stack developer, I have 2 years of experience in both application and presentation layers.
+      I have worked on applications and microservices deployed on IBM Cloud. 
+      I am an avid user of IBM Watson Services and have hands-on experience with Watson Assistant, NLU, Sentiment Analyzer, and more.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="html_finalprojimages/java.jpg"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>4 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node JS</h6>
+            <p>4 years experience</p>
+          </div>
+
+          
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Inventory Management System</h3>
+                <ul>
+                    <li>Developed a retail inventory system with real-time tracking, barcode scanning, and user authentication using HTML, CSS, JavaScript, and integration with online sales platforms.</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h3>Project Task Management System</h3>
+                <ul>
+                    <li>Implemented a collaborative project task management system for software development teams, featuring task creation, Gantt chart visualization, and integration with popular project management tools.</li>
+                </ul>
+            </div>
+            
+            <div class="project-card">
+                <h3>Employee Attendance and Leave Management System</h3>
+                <ul>
+                    <li>Developed an HR-focused system automating attendance tracking, leave management, and payroll integration with biometric or RFID-based attendance and compliance with labor laws.</li>
+                </ul>
+            </div>
+        
+        </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sadaqat Ali is a dedicated individual with a keen interest in programming, recognizing its pivotal role in daily life. 
+          As a quick learner, he effortlessly grasps the fundamental concepts of programming. With a positive attitude and excellent teamwork skills, Sadaqat thrives in collaborative environments. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sadaqat Ali possesses exceptional communication skills, both verbal and written. With a natural ability to articulate ideas effectively, he engages and collaborates seamlessly with team members. 
+        
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          With a comprehensive four-year computer science education, Sadaqat Ali has gained extensive knowledge in programming, algorithms, and system design. His academic journey equipped him with problem-solving skills and a solid foundation in software development. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
